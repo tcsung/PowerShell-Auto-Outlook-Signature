@@ -1,8 +1,11 @@
+# Auto Outlook Signature (PowerShell edition)
+#
+# By Daniel Sung	Feb 2021
 
 # ====================================
-# FUNCTION Outlook_signature_control
+# FUNCTION Auto_Outlook_signature
 # ====================================
-function outlook_signature_control{
+function Auto_outlook_signature{
 	param()
 
 	write-host "- Checking Outlook signature configuration."
