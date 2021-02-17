@@ -45,7 +45,7 @@ Here is an example:
 5. If you have signature setup for different domain, you rename as the 'Signatures' folder to your domain name.
 6. Try run the script on the computer then you should be able to get the standard form of signature ready
 
-### How to update signature templates:
+### How to update signature template:
 
 Template contain 3 files:
 - sign.htm use Microsoft Word
