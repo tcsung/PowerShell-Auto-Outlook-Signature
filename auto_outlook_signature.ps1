@@ -1,5 +1,5 @@
 # Auto Outlook Signature (PowerShell edition)
-#
+# https://github.com/tcsung/PowerShell-Auto-Outlook-Signature
 # By Daniel Sung	Feb 2021
 
 # ====================================
