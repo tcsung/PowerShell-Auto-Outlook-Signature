@@ -22,30 +22,51 @@ Script require to create a signature template, here are the guideline how to cre
 1. Open your Outlook, Click 'File' > 'Options', Under the pop up screen click on 'Mail', in the right side Windows select 'Signatures...'
 2. Under the 'Signature and Stationery' screen, assume it has nothing defined before (better nothing, otherwise remove it all), click on 'New' button, type the name of the signature call 'sign' (This is a must).
 3. Start draft your signature template under 'Edit signature', and put below parameters instead of the ture info :
-- %FULLNAME% for users full name
-- %JOBTITLE% for users job title
-- %PHONE% for users telephone number
-- %MOBILE% for users mobile phone number
-- %EMAIL% for users email address
+- %FULLNAME% for user's full name
+- %JOBTITLE% for user's job title
+- %PHONE% for user's telephone number
+- %MOBILE% for user's mobile phone number
+- %EMAIL% for user's email address
+- %COMPANYNAME% for company name
 
-Here is an example :
-  %FULLNAME%
-  %JOBTILE%
-  
-  %
+Here is an example:
+
+	%FULLNAME%
+	%JOBTITLE%
+	
+	%COMPANYNAME%
+	Tel :		%PHONE%
+	Email :		%EMAIL%
+	Mobile :	%MOBILE%
+	www.abc.com
 
 
-once done copy the template to your server UNC path "\\<File server name>\netlogon\templates\signatures" 
+4. Once done above, click 'OK' to save it, you should be able to find the signature saved under 'C:\Users\<username>\AppData\Roaming\Microsoft\Signatures', rename the 'Signatures' folder to 'default' and copy/move it to your server UNC path "\\<File server name>\netlogon\templates\signatures"
+5. If you have signature setup for different domain, you rename as the 'Signatures' folder to your domain name.
+6. Try run the script on the computer then you should be able to get the standard form of signature ready
+
+### How to update templates:
+
+Template contain 3 files:
+- sign.htm use Microsoft Word
+- sign.rtf use WordPad
+- sign.txt use Notepad
+
+Anything you updated on either of the files, will auto reflect to the email signature when next time run the script.
 
 
-Users cannot change their signature and it will be locked, if you want to relase that, please remove below registry settings :
+## Remarks
 
+You probably found that users cannot change their signature and it will be locked, if you want to release it, please remove below registry settings :
 
-path="HKCU\Software\Microsoft\Office\<Version number>\Common\MailSettings"
-name=NewSignature
+	path = 'HKCU\Software\Microsoft\Office\<Version number>\Common\MailSettings'	
+	name = 'NewSignature'
 
-path="HKCU\Software\Microsoft\Office\<Version number\Common\MailSettings"
-name=ReplySignature
+	path = 'HKCU\Software\Microsoft\Office\<Version number\Common\MailSettings'
+	name = 'ReplySignature'
 
-#  Prerequesties
-Prepare the signature template is a must, and save it under "\\<File server name>\netlogon\templates\signatures\<domain name>" or "\\<File server name\netlogon\templates\signatures\default"
+I can provide an update version of script for create exception list for ignore the registry changes, or you just remove related codes from the script.
+
+## Sample template
+
+Please also check the sample signature template for information.
