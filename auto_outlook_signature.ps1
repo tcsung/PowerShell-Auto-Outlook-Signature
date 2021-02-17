@@ -66,6 +66,7 @@ function Auto_outlook_signature{
 			$adinfo.tell		= $query.PSBase.Children | where-object{$_.name -eq $info.user} | select-object -expandproperty telephoneNumber
 			$adinfo.mobile		= $query.PSBase.Children | where-object{$_.name -eq $info.user} | select-object -expandproperty mobile
 			$adinfo.email		= $query.PSBase.Children | where-object{$_.name -eq $info.user} | select-object -expandproperty email
+			$adinfo.co_name		= $query.PSBase.Children | where-object{$_.name -eq $info.user} | select-object -expandproperty company
 		}
 
 		# -------------------------------------------------------------------------
@@ -123,6 +124,13 @@ function Auto_outlook_signature{
 					if($tmp_record[$x] -cmatch '\%EMAIL\%'){
 						if($adinfo.mobile){
 							$tmp_record[$x] = $tmp_record[$x] -replace '\%EMAIL\%',$adinfo.email
+						}else{
+							$tmp_record[$x] = $null
+						}
+					}
+					if($tmp_record[$x] -cmatch '\%COMPANYNAME\%'){
+						if($adinfo.co_name){
+							$tmp_record[$x] = $tmp_record[$x] -replace '\%COMPANYNAME\%',$adinfo.co_name
 						}else{
 							$tmp_record[$x] = $null
 						}
