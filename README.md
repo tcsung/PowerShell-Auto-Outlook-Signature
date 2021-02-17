@@ -63,6 +63,9 @@ Suggest you compile the script to exe file by using ps2exe.ps1 (Search 'ps2exe' 
 
 Of course you better save the script on the server,(Suggest also under the netlogon folder)
 
+### Additional feature :
+For example, you have a user who has 2 job titles, you can put '<br>' between two job title in the user accounts details, so script will help you split it to 2 lines (Same to tell number and mobile number).  But this feature was disabled by default, please remove the # sign for related codes.
+
 
 ## Remarks
 
