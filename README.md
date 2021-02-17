@@ -1,4 +1,4 @@
-# Auto Outlook Signature (PowerShell Edition)
+# Auto Outlook Email Signature (PowerShell Edition)
 
 ## Preface
 
@@ -7,7 +7,6 @@ This script written since 2015 by using Kixtart which I used to standardize all 
 ## Compatibility
 
 Script is compatibile with MS Outlook 2010 to the latest version, as long as computer is running Windows 7, 8 or 10 environment.
-
 
 ## Requirement
 
