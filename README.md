@@ -1,11 +1,14 @@
-# PowerShell-Auto-Outlook-Signature
-Make your Outlook signature fully auto deploy to the computers
+# Auto Outlook Signature (PowerShell Edition)
 
-# Feature
+## Preface
 
-This script is to help you automate the Outlook signature for each computers in your domain, the feature is almost the same as  raymix /
-PowerShell-Outlook-Signatures, script enqire the AD about the user information and generate the signature,the different is to auto apply the change for each computer by change it's registry settings.  During run the script, better close
-the Outlook, but you may find that the it may not reflect to your Outlook immediately but after restart the computer it should be there.
+To make all your Outlook computer has a standard email signature auto setup, this script was written since 2015 by using Kixtart, here is what I converted to PowerShell and share it out.  Script based on the AD user account information to pull out the data, it generate a signature from your template and then update the user Outlook if any different. Script can auto apply to your Outlook, but due to registry update contain some delay so user must logout and login the computer to get the signature auto attached.
+
+## Compatibility
+
+Script is compatibile with MS Outlook 2010 till the latest version, as long as computer is running Windows base environment.
+
+
 
 Users cannot change their signature and it will be locked, if you want to relase that, please remove below registry settings :
 
