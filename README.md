@@ -6,10 +6,36 @@ This script written since 2015 by using Kixtart which I used to standardize all 
 
 ## Compatibility
 
-Script is compatibile with MS Outlook 2010 till the latest version, as long as computer is running Windows 7, 8 or 10 environment.
+Script is compatibile with MS Outlook 2010 to the latest version, as long as computer is running Windows 7, 8 or 10 environment.
 
 
+## Requirement
 
+- Knowledge of how Distinguished names (DN) work on Active Directory
+- Basic knowledge of Active Directory
+- Create your Email signature template from your Outlook.
+- netlogon folder shared for script use purpose.
+
+## How to
+
+Script require to create a signature template, here are the guideline how to create your template :
+1. Open your Outlook, Click 'File' > 'Options', Under the pop up screen click on 'Mail', in the right side Windows select 'Signatures...'
+2. Under the 'Signature and Stationery' screen, assume it has nothing defined before (better nothing, otherwise remove it all), click on 'New' button, type the name of the signature call 'sign' (This is a must).
+3. Start draft your signature template under 'Edit signature', and put below parameters instead of the ture info :
+- %FULLNAME% for users full name
+- %JOBTITLE% for users job title
+- %PHONE% for users telephone number
+- %MOBILE% for users mobile phone number
+- %EMAIL% for users email address
+
+Here is an example :
+  %FULLNAME%
+  %JOBTILE%
+  
+  %
+
+
+once done copy the template to your server UNC path "\\<File server name>\netlogon\templates\signatures" 
 
 
 Users cannot change their signature and it will be locked, if you want to relase that, please remove below registry settings :
