@@ -45,7 +45,7 @@ Here is an example:
 5. If you have signature setup for different domain, you rename as the 'Signatures' folder to your domain name.
 6. Try run the script on the computer then you should be able to get the standard form of signature ready
 
-### How to update templates:
+### How to update signature templates:
 
 Template contain 3 files:
 - sign.htm use Microsoft Word
@@ -53,6 +53,16 @@ Template contain 3 files:
 - sign.txt use Notepad
 
 Anything you updated on either of the files, will auto reflect to the email signature when next time run the script.
+
+### How to run the script :
+
+Suggest you compile the script to exe file by using ps2exe.ps1 (Search 'ps2exe' from google), then tell GPO to run the exe file by define the login script path:
+1. On your AD Controller, Open the 'Group Policy Management', or use MMC to add snap-in, attach the 'Group Policy Management'.
+2. Look at the left side window, under the domain forest tree, Choose 'Domain' > '<Your domain name>' > 'Group Policy Objects' > 'Default Domain Policy', right click on it and select 'Edit'.
+3. A new screen pop up, look at the left side window, choose 'User Configurations' > 'Windows Settings' > 'Scripts (Logon/logout)'
+4. Look at the right side windows, double click 'Logon', add a script there, and give the full path of the script.
+
+Of course you better save the script on the server,(Suggest also under the netlogon folder)
 
 
 ## Remarks
