@@ -77,7 +77,7 @@ You probably found that users cannot change their signature and it will be locke
 	path = 'HKCU\Software\Microsoft\Office\<Version number\Common\MailSettings'
 	name = 'ReplySignature'
 
-I can provide an update version of script for create exception list for ignore the registry changes, or you just remove related codes from the script.
+I can provide an update version for create exception list for ignore the registry changes, or you just remove related codes from the script.
 
 ## Sample template
 
