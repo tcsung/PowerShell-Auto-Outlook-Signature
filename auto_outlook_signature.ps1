@@ -73,6 +73,8 @@ function Auto_outlook_signature{
 		# -------------------------------------------------------------------------
 		if($adinfo.name){
 			foreach($file in $sign_template_files){
+# Below lines actually is an additional feature to let you add additional line for some of the information, ie : a user has 2 job title.
+# You can remove the # sign to enable this feature.
 #				if(($file -match '\.rtf$') -and ($adinfo.title -match '\<br\>')){
 #					$adinfo.title = $adinfo.title -replace '\<br\>',"\par`n"
 #				}
