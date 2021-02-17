@@ -79,6 +79,8 @@ You probably found that users cannot change their signature and it will be locke
 
 I can provide an update version for create exception list for ignore the registry changes, or you just remove related codes from the script.
 
+If you have a huge image stored in the signature, it should slow down the script run.
+
 ## Sample template
 
 Please also check the sample signature template I was uploaded.
