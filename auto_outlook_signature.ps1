@@ -16,13 +16,12 @@ function Auto_outlook_signature{
 	$policy_key		= 'Registry::HKCU\Software\Microsoft\Windows\CurrentVersion\Policies\System'
 	$profile		= 'Registry::HKCU\Software\Microsoft\Office\%VERSION%\Outlook\Profiles'
 	$profile2		= 'Registry::HKCU\Software\Microsoft\Windows NT\CurrentVersion\Windows Messaging Subsystem\Profiles'
-	$userappdata		= (get-itemproperty -path $reg_path.hkcu_shellfolders).'Appdata'
 
 	$sign_template_path	= '\\File_server\netlogon\templates\signatures\' + $env:userdomain
 	$def_template_path	= '\\File_server\netlogon\templates\signatures\default'
 	$sign_folder_name	= 'Signatures'
 	$sign_file_name		= 'sign'
-	$user_sign_folder	= $env_path.userappdata + '\Microsoft\' + $sign_folder_name
+	$user_sign_folder	= $env:appdata + '\Microsoft\' + $sign_folder_name
 	$sign_template_files	= ($sign_file_name + '.htm'),($sign_file_name + '.rtf'),($sign_file_name + '.txt')
 	$mso_versions		= '11.0','12.0','14.0','15.0','16.0'
 	$mail_client		= (get-itemproperty -path 'Registry::HKLM\SOFTWARE\Clients\Mail').'(default)'
