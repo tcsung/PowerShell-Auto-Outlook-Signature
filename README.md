@@ -79,4 +79,4 @@ I can provide an update version of script for create exception list for ignore t
 
 ## Sample template
 
-Please also check the sample signature template for information.
+Please also check the sample signature template I was uploaded.
