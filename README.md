@@ -40,7 +40,7 @@ Here is an example of signature template:
 	www.abc.com
 
 
-4. Once done above, click 'OK' to save it, you should be able to find the signature saved under 'C:\Users\<username>\AppData\Roaming\Microsoft\Signatures', rename the 'Signatures' folder to 'default' and copy/move it to your server UNC path "\\<File server name>\netlogon\templates\signatures"
+4. Once done above, click 'OK' to save it, you should be able to find your signature template saved under 'C:\Users\<username>\AppData\Roaming\Microsoft\Signatures', rename the 'Signatures' folder to 'default' and copy/move it to your server UNC path "\\<File server name>\netlogon\templates\signatures"
 5. If you have signature setup for different domain, you rename as the 'Signatures' folder to your domain name.
 6. Try run the script on the computer then you should be able to get the standard form of signature ready
 
