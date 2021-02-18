@@ -28,7 +28,7 @@ Script require to create a signature template, here are the guideline how to cre
 - %EMAIL% for user's email address
 - %COMPANYNAME% for company name
 
-Here is an example:
+Here is an example of signature template:
 
 	%FULLNAME%
 	%JOBTITLE%
