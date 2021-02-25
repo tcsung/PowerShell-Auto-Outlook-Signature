@@ -12,7 +12,7 @@ Script is compatibile with MS Outlook 2010 to the latest version, as long as com
 
 - Knowledge of how Distinguished names (DN) work on Active Directory
 - Basic knowledge of Active Directory
-- Create your Email signature template from your Outlook.
+- Create your email signature template from your Outlook.
 - netlogon folder shared for script use purpose.
 
 ## How to
