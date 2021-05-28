@@ -2,7 +2,7 @@
 
 ## Preface
 
-You probably saw something similar before, but this one contain full feature to standardize all users Outlook email signature.  It can enquire the AD user account information to pull out the settings, it generate a standard signature from your template and then update to the Outlook if any different. Script also can auto enable the signature in the Outlook, but due to registry update contain some delay so the email account is first time setup then user must logout and login the computer after the script run.
+You probably saw something similar before, but this one contain full feature to standardize all users Outlook email signature.  It can enquire the AD user account information to pull out the settings, then generate a standard signature from your template and update to the Outlook if any different. Script also can auto enable the signature in the Outlook, but due to registry update contain some delay so the email account is first time setup then user must logout and login the computer after the script run.
 
 ## Compatibility
 
